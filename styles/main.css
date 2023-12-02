@@ -33,3 +33,73 @@
     font-size: 48px;
 
 }
+.block2
+{
+    margin-top: 80px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.block2 h2
+{
+    font-size: 48px;
+    font-weight: 700;
+    margin: 0px;
+    margin-bottom: 40px;
+}
+.block2content
+{
+    
+    display: flex;
+    flex-flow: row wrap;
+}
+.block2content div
+{
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 50px;
+    align-items: center;
+}
+.priceInfo
+{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+}
+.block2content button
+{
+    width: 90%;
+    max-width: 300px;
+    height: 80px;
+    border: 2px #0038FF solid;
+    background-color: #0038FF;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.block2content b
+{
+    display: block;
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+    width: 100%;
+    max-width: 240px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.block2content aside
+{
+    width: 50%;
+}
+.block2content img
+{
+    width: 100%;
+    border-radius: 30px;
+    box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.25);
+}
+.block2content p
+{
+    font-size: 34px;
+    margin:0px;
+    font-weight: 700;
+}
