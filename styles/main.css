@@ -36,9 +36,9 @@
 .block2
 {
     margin-top: 80px;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
+    width: 100%;
+    justify-content: center;
 }
 .block2 h2
 {
@@ -52,24 +52,37 @@
     
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    justify-content: space-around;    
+
 }
 .block2content div
 {
     display: flex;
-    flex-flow: row nowrap;
-    gap: 50px;
+    align-items: center;
+    justify-content: space-around;
+    flex-flow: row wrap;
+}
+.test{
+    width: 90%;
+    display: flex;
+    flex-flow: column;
     align-items: center;
 }
+
+
 .priceInfo
 {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
+    gap: 30px;
 }
 .block2content button
 {
-    width: 90%;
     max-width: 300px;
+    min-width: 240px;
     height: 80px;
     border: 2px #0038FF solid;
     background-color: #0038FF;
@@ -89,17 +102,85 @@
 }
 .block2content aside
 {
-    width: 50%;
+    width: 45%;
+    display: flex;
+    justify-content: center;    
+    
 }
 .block2content img
 {
-    width: 100%;
+    max-width: 100%;
     border-radius: 30px;
     box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.25);
 }
+.imgcontainer
+{
+    min-width: 500px;
+}
 .block2content p
 {
-    font-size: 34px;
+    font-size: 30px;
     margin:0px;
     font-weight: 700;
+
+}
+
+.block3
+{
+    margin-top: 80px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.block3content
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    justify-content: space-around;    
+}
+.block3content aside
+{
+    width: 45%;
+    display: flex;
+    justify-content: center;
+}
+.block3content img
+{
+    max-width: 100%;
+    border-radius: 30px;
+    box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.25);
+}
+.info div
+{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 90%;
+    height: 100%;
+}
+.info
+{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+@media screen and (max-width: 400px) {
+    
+    .block2content img
+    {
+        margin-top: 40px;
+    }
+    .block3content img 
+    {
+        margin-top: 40px;
+    }
+    .block2content aside
+    {
+        width: 100%;
+        min-width: 0px;
+    }
 }
