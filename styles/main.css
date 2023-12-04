@@ -127,22 +127,21 @@
 
 .block3
 {
-    margin-top: 80px;
-    display: flex;
     width: 100%;
-    justify-content: center;
 }
 .block3content
 {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
     width: 100%;
-    justify-content: space-around;    
+    display: flex;
+    flex-flow: row wrap-reverse;
+    justify-content: center;
+    gap: 60px;
 }
 .block3content aside
 {
-    width: 45%;
+    width: 100%;
+    max-width: 600px;
+    min-width: 300px;
     display: flex;
     justify-content: center;
 }
@@ -160,27 +159,141 @@
     width: 90%;
     height: 100%;
 }
-.info
+.Info
 {
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
-    gap: 30px;
+    align-items: center;
+    border-radius: 35px;
+    background-color: #0038FF;
+    color: white;
+    font-weight: 600;
 }
+.Info p
+{
+    display: inline-block;
+}
+.Info ul
+{
+    display: inline-block;
 
+}
+.Info ul li
+{
+    max-width: 400px;
+}
 @media screen and (max-width: 400px) {
     
     .block2content img
     {
         margin-top: 40px;
     }
-    .block3content img 
-    {
-        margin-top: 40px;
-    }
+
     .block2content aside
     {
         width: 100%;
         min-width: 0px;
     }
+    .block3content aside
+    {
+        width: 100%;
+        min-width: 0px;
+    }
+    .Info
+    {
+        margin-top: 40px
+    }
+}
+
+/* block4 */
+.block4
+{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+}
+.block4 label
+{
+    color: white;
+    background-color: #0038FF;
+    cursor: pointer;
+    margin-top: 50px;
+    border-radius: 20px;
+    width: 100%;
+    height: 60px;
+    max-width: 350px;
+    min-width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.block4content
+{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 60px   ;
+}
+.block4content aside
+{
+    width: 100%;
+    max-width: 600px;
+    min-width: 300px;
+}
+.blockinfo
+{
+    font-size: 26px;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: #0038FF;
+    border-radius: 20px;
+    color: white;
+}
+.blockinfo div
+{
+    display: flex;
+    flex-flow: row nowrap;
+    font-size: 18px;
+    width: 100%;
+    justify-content: space-evenly;
+
+}
+.inputArea form
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+.inputArea input
+{
+    width: 90%;
+    max-width: 400px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 20px;
+    border-color: black;
+    padding-left: 30px;
+}
+
+.inputArea input::placeholder
+{
+
+}
+.inputArea input:focus::placeholder
+{
+    opacity: 0;
+}
+#buttSend
+{
+    display: none;
 }
