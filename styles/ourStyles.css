@@ -74,9 +74,10 @@ footer
     font-weight:600;
     max-width: 200px;
 }
-.contentHeader b
+.contentHeader a
 {
     font-weight:600;
+    color: #ffffff;
     text-decoration: underline;
 }
 .contentHeader button:hover

@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 .backimg
 {
     display: flex;
@@ -79,7 +82,7 @@
     justify-content: space-between;
     gap: 30px;
 }
-.block2content button
+.block2content a
 {
     max-width: 300px;
     min-width: 240px;
@@ -88,6 +91,8 @@
     background-color: #0038FF;
     border-radius: 30px;
     cursor: pointer;
+    text-decoration: none;
+
 }
 .block2content b
 {
@@ -98,6 +103,7 @@
     max-width: 240px;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 .block2content aside
 {
@@ -323,12 +329,69 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
-    gap: 5px    ;
+    gap: 5px;
 }
 .block5 div img
 {
  width: 150px;
  border-radius: 100px;
+}
+.blockTemp
+{
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+.blockTempCont
+{
+    width: 100%;
+    max-width: 1250px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    gap: 40px;
+    background-color: #0038FF;
+    border-radius: 35px;
+}
+.blockTempCont h2
+{
+    color: white;
+    font-size: 36px;
+    margin: 0px;
+    margin-top: 30px;
+    text-align: center;
+}
+.contacts img
+{
+    width: 115px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    transition: transform 0.3s ease-in-out;
+}
+.contacts div
+{
+    border-radius: 35px;
+    padding: 15px;
+    background-color: white;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.contacts
+{
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+.contacts a
+{
+    height: 100%;
+    display: block;
+}
+.contacts a:hover img
+{
+    transform: translateY(-5px) rotateZ(5deg);
 }
 /* animate */
 
