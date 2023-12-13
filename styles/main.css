@@ -282,7 +282,7 @@ html{
 }
 .inputArea input
 {
-    width: 90%;
+    width: 100%;
     max-width: 400px;
     height: 40px;
     font-size: 20px;
@@ -290,7 +290,16 @@ html{
     border-color: black;
     padding-left: 30px;
 }
-
+.inputArea form div
+{
+    width: 100%;
+    max-width: 435px;
+}
+.inputArea small
+{
+    padding-left: 30px;
+    color: red;
+}
 .inputArea input::placeholder
 {
 

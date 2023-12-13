@@ -9,6 +9,7 @@
     <title>Evacuation</title>
 </head>
 <body>
+<?php require_once("actions/helper.php");?>
     <!-- block1 -->
     <article>
         <div class="block1">
@@ -53,19 +54,19 @@
             <div class="block2content">
                 <aside class="priceInfo">
                     <div>
-                        <a href="index.html#contact" class="buttOrder"><b>Эвакуация легковых авто</b></a>
+                        <a href="index.php#contact" class="buttOrder"><b>Эвакуация легковых авто</b></a>
                         <p>от 1 500 ₽</p>
                     </div>
                     <div>
-                        <a href="index.html#contact" class="buttOrder"><b>Эвакуация кроссоверов</b></a>
+                        <a href="index.php#contact" class="buttOrder"><b>Эвакуация кроссоверов</b></a>
                         <p>от 2 000 ₽</p>
                     </div>
                     <div>
-                        <a href="index.html#contact" class="buttOrder"><b>Эвакуация джипов</b></a>
+                        <a href="index.php#contact" class="buttOrder"><b>Эвакуация джипов</b></a>
                         <p>от 2 400 ₽</p>
                     </div>
                     <div>
-                        <a href="index.html#contact" class="buttOrder"><b>Эвакуация газель Соболь</b></a>
+                        <a href="index.php#contact" class="buttOrder"><b>Эвакуация газель Соболь</b></a>
                         <p>от 2 600 ₽</p>
                     </div>
                 </aside>
@@ -119,13 +120,20 @@
                     </div>
                 </aside>
                 <aside class="inputArea">
-                    <form action="/scripts/php/form.php" method="POST">
-                        <input type="text" name="name" placeholder="Ваше имя">
-                        <input type="text" name="phone" placeholder="Телефон">
+                    <form action="actions/form.php" method="POST">
+                        <div>
+                            <input type="text" id="nameInput" name="name" placeholder="Ваше имя">
+                            <small><?php echo $_SESSION["AlertError"]["NAME"] ?></small>
+                        </div>
+                        <div>
+                            <input type="tel" id="phoneInput"  name="phone"  placeholder="Телефон">
+                            <small><?php echo $_SESSION["AlertError"]["PHONE"] ?></small>
+                        </div>
                         <button type="submit" name="send" id="buttSend"></button>
                     </form>
                 </aside>
             </div>
+            <p><?php echo $_SESSION['userStatus'];?></p>
             <label for="buttSend" class="buttOrder">Отправить заявку</label>
         </div>
     </article>
@@ -169,6 +177,9 @@
             </div>
         </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="/actions/jquery.maskedinput.min.js"></script>
     <script src="/scripts/js/main.js"></script>
+    
 </body>
 </html>
