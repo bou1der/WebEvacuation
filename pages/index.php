@@ -101,14 +101,14 @@
             <div class="blockTempCont">
                 <h2>Свяжитесь с нами</h2>
                 <div class="contacts">
-                    <div><a href="//api.whatsapp.com/send?phone=79113031911&text=Здравствуйте!"><img src="/resource/item/whatsapp.svg" alt=""></a></div>
+                    <div><a href="//api.whatsapp.com/send?phone=79113031911&text=Здравствуйте!" target="_blank"><img src="/resource/item/whatsapp.svg" alt=""></a></div>
                     <div><a href="https://telegram.im/@soft_evacuation" target="_blank"><img src="/resource/item/telegram.svg" alt=""></a></div>
                     <div><a href="tel:+79113031911"><img src="/resource/item/phonecall.svg" alt=""></a></div>
                 </div>
             </div>
         </div>
     </article>
-    <!-- <article>
+    <article>
         <div class="block4 marg">
             <div class="block4content">
                 <aside class="blockinfo">
@@ -128,7 +128,7 @@
             </div>
             <label for="buttSend" class="buttOrder">Отправить заявку</label>
         </div>
-    </article> -->
+    </article>
     <div class="separator"></div>
     <!-- block5 -->
     <article>
